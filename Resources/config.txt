@@ -1,0 +1,9 @@
+npm create vuetify
+npm install
+npm run dev
+
+essential
+
+npm install
+npm add vuetify
+npm install axios
