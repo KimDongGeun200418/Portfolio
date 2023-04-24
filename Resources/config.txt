@@ -10,5 +10,21 @@ npm install
 npm add vuetify
 npm install axios
 
+#Spring
+Developer Tools
+ - Spring Boot DevTools
+ - Lombok
+
+SQL
+ - MyBatis Framework
+ - MySQL Driver
+ - Spring Data JPA
+
+Security
+ - Spring security
+
+Web
+ - Spring Web
+
 #포폴 주소
 kdg99.link
