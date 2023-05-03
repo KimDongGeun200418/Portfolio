@@ -1,18 +1,18 @@
 //기본 경로
 
-import HelloWorld from "../components/HelloWorld.vue";
-import HelloTest from "../components/HelloTest.vue";
+import BlogMain from "@/components/BlogMain.vue";
+import HelloTest from "@/components/HelloTest.vue";
 
 let routes = [
   {
     path: "/",
     name: "Index",
-    component: HelloWorld,
+    component: BlogMain,
   },
   {
-    path: "/world",
-    name: "World",
-    component: HelloWorld,
+    path: "/index",
+    name: "BlogMain",
+    component: BlogMain,
   },
   {
     path: "/test",

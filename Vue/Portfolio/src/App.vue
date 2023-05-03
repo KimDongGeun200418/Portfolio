@@ -1,6 +1,7 @@
 <template>
-  <router-link to="/world">Hey</router-link>
+  <router-link to="/">Main</router-link> /
   <router-link to="/test">Test</router-link>
+  <hr />
   <router-view></router-view>
 </template>
 
@@ -10,6 +11,8 @@ import { onBeforeMount } from "vue";
 const router = useRouter();
 
 onBeforeMount(() => {
-  //router.push("/test");
+  router.push("/");
 });
 </script>
+
+<style></style>
