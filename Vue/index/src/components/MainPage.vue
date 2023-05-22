@@ -1,21 +1,20 @@
 <template>
   <v-card>
     <v-layout>
-      <v-app-bar title="김동근 Portfolio"></v-app-bar>
+      <Header></Header>
+      <Menu></Menu>
 
-      <v-navigation-drawer width="240">
-        <v-list>
-          <v-list-item>
-            <v-avatar
-              image="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-              size="200"
-            ></v-avatar>
-            <span>김동근</span>
-          </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
-
-      <v-main style="min-height: 300px"></v-main>
+      <v-main
+        style="min-height: 300px"
+        image="@/assets/background-hanji3.jpg"
+      ></v-main>
     </v-layout>
   </v-card>
 </template>
+
+<script setup>
+import Header from "@/components/_Header.vue";
+import Menu from "@/components/_Menu.vue";
+</script>
+
+<style scoped></style>
