@@ -1,14 +1,15 @@
 <template>
   <v-navigation-drawer width="240" image="@/assets/background-hanji3.jpg">
     <v-list>
-      <v-list-item class="text-center">
+      <v-list-item class="text-center p10">
         <v-avatar
           image="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
           size="200"
+          class="mb-3"
         ></v-avatar>
         <span id="profileName" class="text-h6 font-weight-bold">김동근</span>
       </v-list-item>
-      <v-list-item>
+      <v-list-item class="mt-10">
         <nav class="category">
           <h5>카테고리</h5>
           <ul class="category_list">
@@ -19,7 +20,7 @@
               <a href=""> 포트폴리오 </a>
               <ul class="sub_category_list">
                 <li class="category_item">
-                  <a href=""> JSP </a>
+                  <router-link to="/JSP">JSP</router-link>
                 </li>
                 <li class="category_item">
                   <a href=""> SpringBoot </a>
@@ -35,6 +36,15 @@
     </v-list>
   </v-navigation-drawer>
 </template>
+
+<script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+const openJSP = () => {
+  router.push("/JSP");
+};
+</script>
 
 <style scoped>
 nav.category {

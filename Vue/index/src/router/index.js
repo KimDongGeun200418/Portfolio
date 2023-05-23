@@ -2,9 +2,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import main from "./main";
+import portfolio from "./portfolio";
 
 const baseRoutes = [];
-const routes = baseRoutes.concat(main);
+const routes = baseRoutes.concat(main, portfolio);
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
