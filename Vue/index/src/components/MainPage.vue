@@ -5,8 +5,9 @@
       <Menu></Menu>
 
       <v-main style="min-height: 300px" image="@/assets/background-hanji3.jpg">
-        <router-link to="/JSP">JSP9999</router-link>
-        <router-view />
+        <div class="main-wrap">
+          <router-view />
+        </div>
       </v-main>
     </v-layout>
   </v-card>

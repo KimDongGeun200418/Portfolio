@@ -5,9 +5,8 @@
 <script setup></script>
 
 <style>
-a {
-  text-decoration: none;
-  color: #555;
+div.main-wrap > div > h3 {
+  margin: 15px 10px 10px;
 }
 
 .hanji {

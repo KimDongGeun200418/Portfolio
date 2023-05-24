@@ -14,21 +14,49 @@
           <h5>카테고리</h5>
           <ul class="category_list">
             <li class="category_item">
-              <a href="">메인</a>
+              <router-link to="/">메인</router-link>
             </li>
             <li class="category_item">
-              <a href=""> 포트폴리오 </a>
+              <a href="" disabled> 포트폴리오 </a>
               <ul class="sub_category_list">
                 <li class="category_item">
                   <router-link to="/JSP">JSP</router-link>
                 </li>
                 <li class="category_item">
-                  <a href=""> SpringBoot </a>
+                  <router-link to="/Vue">Vue</router-link>
                 </li>
                 <li class="category_item">
-                  <a href=""> Vue </a>
+                  <router-link to="/Spring">SpringBoot</router-link>
                 </li>
               </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="category">
+          <h5>Contact</h5>
+          <ul class="category_list">
+            <li class="category_item">
+              <a href="https://github.com/kdg99" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
+                  alt="GitHub"
+                  height="50"
+                />
+              </a>
+              <a href="https://kdg99.tistory.com" target="_blank">
+                <img
+                  src="//i.namu.wiki/i/4IxOX9KQijYYukO_03cHyz3ayOFwzshSFm_4D-KQ4TtWXim59kv5LYrgqgklU9jhURauSv7z4zBCqrUT7ey9-mzeCgeY1OChuLO8xqyzoHuUa0GrSyJKVqi-TwJvEbhVZk30JsZ9NG-O_VE1-kSnEg.svg"
+                  alt="Tistory"
+                  height="50"
+                />
+              </a>
+              <a href="mailto:gpaj123ehdm@gmail.com" target="_blank">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/mail-dot-ru.svg"
+                  alt="Tistory"
+                  height="50"
+                />
+              </a>
             </li>
           </ul>
         </nav>
@@ -37,18 +65,16 @@
   </v-navigation-drawer>
 </template>
 
-<script setup>
-import { useRouter } from "vue-router";
-const router = useRouter();
-
-const openJSP = () => {
-  router.push("/JSP");
-};
-</script>
+<script setup></script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #555;
+}
 nav.category {
   border: 2px solid #7a583a;
+  margin-bottom: 50px;
 }
 nav.category ul {
   padding: 10px;
@@ -63,6 +89,9 @@ nav.category .category_item {
   padding: 6px 0 7px;
   font-weight: 400;
   font-size: 1rem;
+}
+nav.category .category_item > a > img {
+  margin: 5px;
 }
 nav.category .sub_category_list {
   overflow: hidden;
