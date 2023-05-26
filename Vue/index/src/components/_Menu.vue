@@ -45,7 +45,7 @@
               </a>
               <a href="https://kdg99.tistory.com" target="_blank">
                 <img
-                  src="//i.namu.wiki/i/4IxOX9KQijYYukO_03cHyz3ayOFwzshSFm_4D-KQ4TtWXim59kv5LYrgqgklU9jhURauSv7z4zBCqrUT7ey9-mzeCgeY1OChuLO8xqyzoHuUa0GrSyJKVqi-TwJvEbhVZk30JsZ9NG-O_VE1-kSnEg.svg"
+                  src="https://i.namu.wiki/i/71LLWgHgPBkFhyip-XI3gWL0eFwZPPgET94m1TDIM2_-juDsd-7mbi1q0utirpuONrLKoe0KMUsWGrlesGM2o8w5hADTxYVK-fDcYtZM6JgDW8aLB26bEDn2F2FqbT1GUshzH0_CmBAwrMW76ekdzw.svg"
                   alt="Tistory"
                   height="50"
                 />
