@@ -63,7 +63,7 @@
     <div>
       <p>Portfolio</p>
       <div>
-        <a href="http://kdg99.link:8102/FarmstoryJ" target="_blank"
+        <a href="http://kdg99.link:8102/Farmstory" target="_blank"
           >FarmstoryJ</a
         >
         홈페이지 / SpringBoot(InteliJ) / 8102port / 개인프로젝트 / 배송조회 구현

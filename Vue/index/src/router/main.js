@@ -9,6 +9,7 @@ import PortfolioMain from "@/components/Portfolio/PortfolioMain.vue";
 import PortfolioJSP from "@/components/Portfolio/PortfolioJSP.vue";
 import PortfolioVue from "@/components/Portfolio/PortfolioVue.vue";
 import PortfolioSpring from "@/components/Portfolio/PortfolioSpring.vue";
+import PortfolioPortfolio from "@/components/Portfolio/PortfolioPortfolio.vue";
 
 let routes = [
   {
@@ -16,7 +17,7 @@ let routes = [
     name: "Index",
     component: MainPageView,
     children: [
-      { path: "", component: PortfolioMain, meta: { title: "Portfolio KDG" } },
+      { path: "/", component: PortfolioMain, meta: { title: "Portfolio KDG" } },
       {
         path: "JSP",
         component: PortfolioJSP,
@@ -31,6 +32,11 @@ let routes = [
         path: "Spring",
         component: PortfolioSpring,
         meta: { title: "Portfolio Spring" },
+      },
+      {
+        path: "Portfolio",
+        component: PortfolioPortfolio,
+        meta: { title: "Portfolio" },
       },
     ],
   },

@@ -11,7 +11,7 @@ import { onBeforeMount } from "vue";
 const router = useRouter();
 
 onBeforeMount(() => {
-  router.push("/");
+  //router.push("/");
 });
 </script>
 

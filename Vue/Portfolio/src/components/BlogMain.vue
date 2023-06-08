@@ -1,31 +1,25 @@
 <template>
   <v-card>
     <v-layout>
-      <!-- side -->
-      <v-navigation-drawer
-        color="grey-darken-2"
-        permanent
-        width="250"
-      ></v-navigation-drawer>
+      <!-- menu -->
+      <BlogMenu></BlogMenu>
 
-      <!-- main banner -->
-      <v-app-bar color="grey" height="48" flat></v-app-bar>
+      <!-- footer -->
+      <BlogFooter></BlogFooter>
 
-      <!-- side right -->
+      <!-- Top banner -->
+      <v-app-bar flat height="">
+        <v-img src="@/assets/fixImg/MainBanner.jpeg" cover></v-img>
+      </v-app-bar>
+
+      <!-- side right 
       <v-navigation-drawer
         color="grey-lighten-1"
         location="right"
         permanent
         width="150"
       ></v-navigation-drawer>
-
-      <!-- footer -->
-      <v-app-bar
-        color="grey-lighten-2"
-        flat
-        height="48"
-        location="bottom"
-      ></v-app-bar>
+      -->
 
       <!-- content -->
       <v-main>
@@ -40,6 +34,9 @@
   </v-card>
 </template>
 
-<script setup></script>
+<script setup>
+import BlogFooter from "./BlogFooter.vue";
+import BlogMenu from "./BlogMenu.vue";
+</script>
 
 <style scoped></style>

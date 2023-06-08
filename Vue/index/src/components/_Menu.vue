@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="240" image="@/assets/background-hanji3.jpg">
+  <v-navigation-drawer width="250" image="@/assets/background-hanji3.jpg" v-model="drawer" disable-resize-watcher="true">
     <v-list>
       <v-list-item class="text-center p10">
         <v-avatar
@@ -28,6 +28,9 @@
                 <li class="category_item">
                   <router-link to="/Spring">SpringBoot</router-link>
                 </li>
+                <li class="category_item">
+                  <router-link to="/Portfolio">Portfolio</router-link>
+                </li>
               </ul>
             </li>
           </ul>
@@ -45,7 +48,7 @@
               </a>
               <a href="https://kdg99.tistory.com" target="_blank">
                 <img
-                  src="https://i.namu.wiki/i/71LLWgHgPBkFhyip-XI3gWL0eFwZPPgET94m1TDIM2_-juDsd-7mbi1q0utirpuONrLKoe0KMUsWGrlesGM2o8w5hADTxYVK-fDcYtZM6JgDW8aLB26bEDn2F2FqbT1GUshzH0_CmBAwrMW76ekdzw.svg"
+                  src="@/assets/tistorylogo.svg"
                   alt="Tistory"
                   height="50"
                 />
@@ -65,7 +68,21 @@
   </v-navigation-drawer>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from 'vue';
+
+const props = defineProps({
+    drawer: Boolean,
+});
+
+const drawer = computed(() => {
+  return props.drawer;
+});
+
+
+
+
+</script>
 
 <style scoped>
 a {
@@ -115,4 +132,9 @@ nav.category .sub_category_list li::before {
 nav.category .sub_category_list li:first-child::before {
   height: 65%;
 }
+
+div.v-navigation-drawer__scrim{
+  display: none;
+}
+
 </style>
